@@ -1,6 +1,6 @@
 :root {
-    --primary-color: rgb(30, 81, 156);
-    --secondary-color: rgb(118, 19, 230);
+    --primary-color: rgb(54, 10, 105);
+    --secondary-color: rgb(230, 139, 19);
     --dark-color: rgb(36, 36, 36);
     --white-color: rgb(255, 255, 255);
 }
@@ -16,7 +16,7 @@ footer .social>a {
 
 footer .social>a:hover {
     opacity: 0.9;
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 
@@ -44,9 +44,9 @@ h6 {
 
 code[class*="language-"],
 pre[class*="language-"] {
-white-space: pre-wrap;
-word-break: break-all;
-word-wrap: break-word;
+    white-space: pre-wrap;
+    word-break: break-all;
+    word-wrap: break-word;
 }
 
 
@@ -88,4 +88,3 @@ main>.container {
         font-size: 18vw;
     }
 }
-
