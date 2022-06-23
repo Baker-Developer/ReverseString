@@ -2,7 +2,7 @@
 <html lang="en" class="h-100">
 
 <head>
-    <title>#AppName#: A Coding Project By Benjamin Baker</title>
+    <title>Reverse: A Coding Project By Benjamin Baker</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -14,15 +14,15 @@
     <!-- Convert this to an external style sheet -->
     <link href="/CSS/site.css" rel="stylesheet">
     <link href="/CSS/prism.css" rel="stylesheet">
-    <link href="IMG/favicon-32x32.png" rel="icon" type="image/png">
+    <link href="IMG/Untitleddesign.png" rel="icon" type="image/png">
 </head>
 
 <body class="d-flex flex-column h-100">
     <!-- ----Nav Sectoion----  -->
     <nav class="navbar navbar-expand-md navbar-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img src="IMG/hundoLogo.svg" class="d-inline-block align-text-top"
-                    width="30" height="24" alt="Baker Logo"> APPLICATION NAME</a>
+            <a class="navbar-brand" href="#"><img src="IMG/Untitleddesign.png" class="d-inline-block align-text-top"
+                    width="32" height="32" alt="Baker Logo"> Reverse String</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
                 aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -39,10 +39,10 @@
                         <a class="nav-link" href="app.html" target="_self">The App</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Git Repo</a>
+                        <a class="nav-link" href="https://github.com/Benjamin-Baker101/ReverseString">Git Repo</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" target="_blank" href="#">About</a>
+                        <a class="nav-link" target="_blank" href="https://bakerportfolio.netlify.app/">About</a>
                     </li>
 
                 </ul>
@@ -51,24 +51,62 @@
     </nav>
     <!-- ----Main Sectoion----  -->
     <main class="flex-shrink-0">
-        <div class="container  py-5 mt-5">
-            <h2 class="border-1 border-bottom border-dark">The Code for APP NAME</h2>
+        <div class="container py-5 mt-5">
+            <h2 class="border-1 border-bottom border-dark">The Code For Reverse String</h2>
             <div class="row row-cols-1 row-cols-lg-2">
                 <div class="col-lg-8">
                     <pre class="line-numbers"><code class="language-javascript">
-                            //Call Hello Javasript
-                            function hellojavascript() {
-                                alert('Hello Javascript');
-                            }
+                        // Get String From The Page
+// controller function
+function getValue() {
+
+    document.getElementById("alert").classList.add("invisible");
+
+    let userString = document.getElementById("stringInput").value;
+
+    let revString = reverseString(userString);
+
+    displayString(revString);
+
+    
+    
+
+}
+
+
+// Write Function That Reverses The String
+// logic function
+function reverseString(userString) {
+
+    let revString = [];
+
+    // reverse a string using a for loop
+    for (let index = userString.length - 1; index >= 0; index--) {
+        revString += userString[index];
+    }
+    return revString;
+}
+
+
+
+// Display The Message To The User
+// view function
+function displayString(revstring) {
+
+    //write to page
+    document.getElementById("message").innerHTML = `Your String Reversed Is: ${revstring}`;
+    //show the alert box
+    document.getElementById("alert").classList.remove("invisible");
+}
                     </code>
                     </pre>
                 </div>
-                <div class="col-lg-4" >
+                <div class="col-lg-4">
                     <p>The Code Is Structed In One Function</p>
                     <h5>Hello Javascript</h5>
                     <p>Hello Javascript Is A Function That Displays An Alert With A Message "Hello Javascript"</p>
                 </div>
-                
+
             </div>
         </div>
     </main>
@@ -85,7 +123,7 @@
 
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-center">
-                    <img src="IMG/hundoLogo.svg" alt="Baker Logo" height="24">
+                    <img src="IMG/bbakerdark.svg" alt="Baker Logo" height="40" width="250">
                 </div>
                 <div class="col d-flex align-items-center justify-content-start justify-content-lg-end">
                     <div class="row">
